@@ -28,13 +28,13 @@ body {
     overflow: hidden;
 }
 
-#contenerOne {
+#containerOne {
     display: table;
     float: left;
     margin-right: 20%;
 }
 
-#contenerTwo {
+#containerTwo {
     display: table;
     overflow: hidden;
 }
@@ -379,12 +379,12 @@ input[type=submit] {
 
 @media (max-width: 1050px) {
     /* style dla 1050px */
-    #contenerOne {
+    #containerOne {
         float: none;
         margin-right: 0px;
         margin: 0 auto;
     }
-    #contenerTwo {
+    #containerTwo {
         margin: 0 auto;
     }
 }
