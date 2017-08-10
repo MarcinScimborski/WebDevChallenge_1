@@ -1,0 +1,436 @@
+* {
+    /*wez kazdy element [resetowanie wszystkich marginow i paddingow]*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    /* zliczy wszystkie wartosci w elemencie */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images-folder1/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#wrapper {
+    max-width: 1000px;
+    /* maksymalna szerokosc */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#contenerOne {
+    display: table;
+    float: left;
+    margin-right: 20%;
+}
+
+#contenerTwo {
+    display: table;
+    overflow: hidden;
+}
+
+
+/* HEADER */
+
+header {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+#contenerTwo header {
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.2;
+}
+
+
+/* ************************************************* */
+
+
+/* Register Form */
+
+section#registerFormTitle,
+section#sendEmailTitle {
+    width: 400px;
+    font-size: 19px;
+    color: white;
+    text-shadow: 2px 2px #0e0e0e;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section#signInFormTitle,
+section#recoverFormTitle,
+section#subscribeFormTitle {
+    width: 400px;
+    font-size: 19px;
+    color: white;
+    text-shadow: 2px 2px #0e0e0e;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section#registerForm,
+#sendEmail,
+#signInForm,
+#recoverForm,
+#subscribeForm {
+    width: 400px;
+    margin-bottom: 1em;
+    border: 18px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+#registerForm select {
+    margin-bottom: 1em;
+}
+
+fieldset {
+    background: white;
+    padding: 1em;
+    border: none;
+}
+
+input,
+button,
+textarea,
+select,
+submit {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#signInForm input[type=name] {
+    width: 50%;
+    padding: 0.2em;
+    margin-left: 6%;
+    background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
+}
+
+#sendButton,
+#doneButton {
+    margin-left: 0;
+    padding: 0.2em;
+}
+
+#sendButton {
+    width: 40%;
+}
+
+#noThanksButton {
+    background: linear-gradient(to bottom, #f65e70 0%, #f13949 100%);
+}
+
+#noThanksButton {
+    margin-left: 0;
+    padding: 0.2em;
+}
+
+#doneButton {
+    opacity: 0.6;
+}
+
+#doneButton,
+#noThanksButton {
+    width: 40%;
+    float: right;
+}
+
+#sendEmail textarea {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 200px;
+}
+
+#noThanksButton input {
+    background-color: #f44c5e;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea,
+option {
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 37px;
+    border-left: none;
+}
+
+select {
+    background-color: white;
+    cursor: pointer;
+    outline-style: none;
+    padding-left: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    /* reset */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+select.classic {
+    background-image: linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.3) 50%), linear-gradient(135deg, rgba(0, 0, 0, 0.3) 50%, transparent 50%), linear-gradient(to right, white, white);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    padding-left: 1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=checkbox] {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: none;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    z-index: 2;
+}
+
+input[type=submit] {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
+}
+
+.check {
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    margin-right: 1.1em;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    padding: 5px 5px;
+    margin-top: 4%;
+    float: left;
+}
+
+.check label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: white;
+}
+
+.check input[type=checkbox]:checked+label:after {
+    opacity: 1;
+}
+
+.check label::after {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    opacity: 0;
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkBoxInput,
+.inputCheckBox {
+    padding: 0;
+    float: left;
+}
+
+.checkBoxInput {
+    margin-top: 0;
+}
+
+.checkSignInput {
+    margin-top: 4%;
+    margin-right: 6%;
+    padding: 0;
+}
+
+.inputSignIn {
+    display: block;
+    width: 50%;
+    margin-top: 0px;
+}
+
+.signInFormInput {
+    padding: 0;
+    float: left;
+    margin-top: 4%;
+    margin-right: 5%;
+}
+
+#registerForm p,
+#sendEmail p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#signInForm p {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.item {
+    background: url(images-folder1/kreska.png) center right no-repeat;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    width: 76px;
+    height: 37px;
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.user img {
+    display: block;
+    margin: 11% auto;
+}
+
+.pass img {
+    display: block;
+    margin: 8% auto;
+}
+
+.email img {
+    display: block;
+    margin: 16% auto;
+}
+
+.local img {
+    display: block;
+    margin: 5% auto;
+}
+
+.inputRegister {
+    float: left;
+    width: 77%;
+    padding: 0;
+}
+
+.phone img {
+    display: block;
+    margin: 11% auto;
+}
+
+
+/* Media queries */
+
+@media (max-width: 1050px) {
+    /* style dla 1050px */
+    #contenerOne {
+        float: none;
+        margin-right: 0px;
+        margin: 0 auto;
+    }
+    #contenerTwo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 450px) {
+    /* style dla 450px */
+    #wrapper {
+        max-width: 450px;
+    }
+    header img {
+        width: 100%;
+    }
+    section#registerFormTitle,
+    section#sendEmailTitle,
+    section#signInFormTitle,
+    section#recoverFormTitle,
+    section#subscribeFormTitle {
+        width: 100%;
+    }
+    section#registerForm,
+    #sendEmail,
+    #signInForm,
+    #recoverForm,
+    #subscribeForm {
+        width: 100%
+    }
+    .inputRegister {
+        width: 73%;
+    }
+    #registerForm p,
+    #sendEmail p {
+        font-size: 94%;
+        line-height: 1.59em;
+    }
+    .check {
+        margin-right: 1em;
+    }
+    .inputSignIn {
+        width: 44%;
+    }
+    #sendButton,
+    #doneButton {
+        float: left;
+    }
+}
+
+@media (max-width: px) {
+    /* style dla 300px */
+}

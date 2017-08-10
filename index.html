@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>WebDevChallenge_1</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images-folder1/logo_top.png" alt="logo-top" />
+        </header>
+        
+        <div id="contenerOne">
+            <section id="registerFormTitle">
+                <h1>Register Form</h1>
+            </section>
+
+            <section id="registerForm">
+                <form class="register">
+                    <fieldset>
+                        <div class="registerInput">
+                            <div class="item user"><img src="images-folder1/user.png" alt="username"/></div>
+                            <div class="inputRegister"><input type="text" placeholder="Username" min="3" size="40" required></div>
+                            <div class="item pass"><img src="images-folder1/haslo.png" alt="password" /></div>
+                            <div class="inputRegister"><input type="password" placeholder="Password" required></div>
+                            <div class="item pass"><img src="images-folder1/haslo.png" alt="confirm-password" /></div>
+                            <div class="inputRegister"><input type="password" placeholder="Confirm Password" required></div>
+                            <div class="item email"><img src="images-folder1/email.png" alt="e-mail" /></div>
+                            <div class="inputRegister"><input type="email" placeholder="Email"></div>
+                            <div class="item local"><img src="images-folder1/gps.png" alt="location" /></div>
+                            <div class="inputRegister">
+                                <select class="classic">
+                            <option value="" disabled selected hidden>Your location</option>
+                            <option>UK</option>
+                            <option>UE</option>
+                                    </select>
+                            </div>
+                            <div class="checkBoxInput">
+                                <div class="check">
+                                    <input type="checkbox" name="rules" required>
+                                    <label for="check"></label>
+                                </div>
+                            </div>
+                            <p class="inputCheckBox">I have read and accept the terms of use</p>
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+
+
+            <section id="sendEmailTitle">
+                <h1>Send Email</h1>
+            </section>
+
+            <section id="sendEmail">
+                <form>
+                    <fieldset>
+                        <div class="registerInput">
+                            <div class="item user"><img src="images-folder1/user.png" alt="username" /></div>
+                            <div class="inputRegister"><input type="text" placeholder="Username"></div>
+                            <div class="item email"><img src="images-folder1/email.png" alt="e-mail" /></div>
+                            <div class="inputRegister"><input type="email" placeholder="Email"></div>
+                            <textarea placeholder="Type your message..."></textarea>
+                            <div class="checkBoxInput">
+                                <div class="check">
+                                    <input type="checkbox" name="rules">
+                                    <label for="check"></label>
+                                </div>
+                            </div>
+                            <p class="inputCheckBox">Send a copy to my Email</p>
+                            <input type="submit" value="Send Email">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+        <div id="contenerTwo">
+            <section id="signInFormTitle">
+                <h1>Sign In Form</h1>
+            </section>
+
+            <section id="signInForm">
+                <form>
+                    <fieldset>
+                        <div class="registerInput">
+                            <div class="item user"><img src="images-folder1/user.png" alt="username" /></div>
+                            <div class="inputRegister"><input type="text" placeholder="Username" required></div>
+                            <div class="item pass"><img src="images-folder1/haslo.png" alt="password" /></div>
+                            <div class="inputRegister"><input type="password" placeholder="Password" required></div>
+                            <div class="checkSignInput">
+                                <div class="check">
+                                    <input type="checkbox" name="rules">
+                                    <label for="check"></label>
+                                </div>
+                            </div>
+                            <p id="signInFormInput" class="signInFormInput">Remember me</p>
+                            <input class="inputSignIn" type="submit" value="Sign In">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="recoverFormTitle">
+                <h1>Recover Form</h1>
+            </section>
+
+            <section id="recoverForm">
+                <form>
+                    <fieldset>
+                        <div class="registerInput">
+                            <div class="item user"><img src="images-folder1/user.png" alt="username" /></div>
+                            <div class="inputRegister"><input type="text" placeholder="Username"></div>
+                            <div class="item phone"><img src="images-folder1/fon_ikon.png" alt="number-phone" /></div>
+                            <div class="inputRegister"><input type="email" placeholder="Enter your Phone number"></div>
+                            <input id="sendButton" type="submit" value="Send">
+                            <input id="doneButton" type="submit" value="Done">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="subscribeFormTitle">
+                <h1>Subscribe Form</h1>
+            </section>
+
+            <section id="subscribeForm">
+                <form>
+                    <fieldset>
+                        <div class="registerInput">
+                            <div class="item email"><img src="images-folder1/email.png" alt="e-mail" /></div>
+                            <div class="inputRegister"><input type="email" placeholder="Enter your Phone number"></div>
+                            <input id="sendButton" type="submit" value="Subscribe">
+                            <input id="noThanksButton" type="submit" value="Sign Up">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <header>
+                <img src="images-folder1/logo_bottom.png" alt="logo-bottom" />
+            </header>
+        </div>
+    </div>
+
+</body>
+
+</html>
