@@ -16,8 +16,6 @@
 body {
     background-image: url('images-folder1/background.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     background-size: cover;
 }
 
